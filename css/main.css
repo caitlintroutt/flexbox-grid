@@ -109,6 +109,26 @@ body {
   background-color: cornflowerblue;
 }
 
+header, footer, main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-variant: small-caps;
+}
+
+header {
+  width: 100%
+}
+
+.intro {
+  float: left;
+  border: 1px solid #fff;
+  padding: 20px;
+  flex-wrap: wrap;
+  width: 100%
+}
+
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
@@ -116,22 +136,33 @@ body {
   justify-content: space-between;
 }
 
-.div-1, .div-2, .div-3 {
+.flex-items {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: #fff;
   line-height: 1em;
   font-size: 1em;
   text-align:center;
   font-variant: small-caps
-  font-weight: lighter;
+  font-weight: 300;
   height: 300px;
   display: flex;
-  width: 30%;
+  width: 33%;
   justify-content: center;
   align-items: center;
   border: 1px solid #fff;
   padding: 20px;
+  flex-flow: row wrap;
+
 }
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 
 
 
